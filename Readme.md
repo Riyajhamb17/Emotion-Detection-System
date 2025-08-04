@@ -53,7 +53,20 @@ Input resized to (224x224x3)
 
 🔗 ResNet50 (Transfer Learning) 
 Pretrained ResNet50 as feature extractor
-Getting Started: Step 1: Clone the Repository image Step 2: Install Dependencies image Step 3: Download the Dataset You can download the FER-2013 dataset from Kaggle: https://www.kaggle.com/datasets/msambare/fer2013 Step 4: Run the Notebook Open the emotion_detection.ipynb file and run the cells to train and evaluate models.
+
+📊 Performance Overview
+Model                                                            	Validation Accuracy	
+🧱 Custom CNN	                                          55.81%	    Lightweight baseline model; room for tuning
+🔄 CNN + Augmentation                                  	57.00%	    Slight improvement due to better generalization
+🧠 VGG16 (Transfer Learning)                           	58.78%	    Richer feature extraction but prone to overfitting
+🔗 ResNet50 (Transfer Learning)                        	65.00%     	Best performing; deeper architecture with residual learning
+
+
+Getting Started: 
+Step 1: Clone the Repository image 
+Step 2: Install Dependencies image 
+Step 3: Download the Dataset You can download the FER-2013 dataset from Kaggle: https://www.kaggle.com/datasets/msambare/fer2013 
+Step 4: Run the Notebook Open the emotion_detection.ipynb file and run the cells to train and evaluate models.
 
 Requirements: 
 tensorflow 
